@@ -6,7 +6,7 @@
 2. count the number of products on the home page - with div thumbnail to validate the length of 16 
 3. select the productcart and assert the title cart  */
 
-describe("Alias and invoke challenge ", () => {
+describe("Alias and Invoke challenge ", () => {
 
     it("Count the number of products of the home page", () => {
         cy.visit("https://automationteststore.com/");
