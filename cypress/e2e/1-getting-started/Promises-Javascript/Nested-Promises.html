@@ -1,0 +1,46 @@
+<html>
+   <head>
+      <title> JS Tutorial</title>
+      <p id="demo"></p>
+   </head>
+
+   <body>
+      <script>
+        // we created 3 functions (empty_tank , engine, travel) each one return promise
+        let empty_tank = function(){
+    // create a function which returns promise
+          return new Promise((resolve, reject) => {
+              resolve(" The car does not have enough fuel.")
+          })
+        }
+        let engine = function(msg){
+       // create a function which returns promise
+          return new Promise((resolve, reject) => {
+              resolve(msg + " The engine is over heated.")
+          })
+        }
+
+        let travel= function(msg){
+    // create a function which returns promise
+          return new Promise((resolve, reject) => {
+              resolve(msg + " The car is not safe for travelling ")
+          })
+        }
+
+        //call the function
+
+        empty_tank().then((msgResult)=>{
+ // this is nested promise itself
+            return engine(msgResult)
+        }).then((msgResult) =>{
+            return travel(msgResult)
+        }).then((msgResult) => {
+            console.log("Done !" + msgResult)
+        })
+
+        
+
+        
+      </script>
+   </body>
+</html>

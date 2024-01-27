@@ -1,0 +1,30 @@
+
+<html>
+   <head>
+      <title> JS Tutorial</title>
+      <p id="demo"></p>
+   </head>
+
+   <body>
+      <script>
+         let car = new Promise(function(resolve, reject)  { 
+             fuel_tank = false
+             if( fuel_tank ){
+               resolve()
+             }
+                
+             else
+                reject()
+         
+         });
+
+         car.then(function () {
+            document.write("the tank if full")
+
+         }).catch(function(){
+
+            document.write("the tank is not full")
+         })
+      </script>
+   </body>
+</html>
