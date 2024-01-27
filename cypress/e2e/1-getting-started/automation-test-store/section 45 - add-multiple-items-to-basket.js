@@ -1,7 +1,7 @@
 /// <reference types = "Cypress"/>
 
 // ********* section : 45 - Video 183 *********
-describe('Add multiple items to basket', () => {
+describe('Add multiple items to the basket', () => {  // section 59- Video 235:  do any change
     // initalize the data file 
     before(function() {
         cy.fixture("products").then((data) => {
