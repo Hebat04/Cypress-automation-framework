@@ -95,7 +95,7 @@ describe("Create Account for user 1", () => {
 
         var option = $text.text()
 
-        cy.log(" Region/State: " + option + " is selected"); 
+        cy.log(" Region/State: " + option + " is selected."); 
        })
        
        
