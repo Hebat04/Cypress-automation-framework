@@ -40,7 +40,7 @@ describe("Handling data via webdriveruni", () => {
            // you habe to put the log after the then level as numb will be calculate ever then after the log is done 
            cy.log("Found total age: " + numb);
            // Add asseration to validate total number inside numb is equal to 322
-           expect(numb).to.eq(322)
+           expect(numb).to.eq(322);
       })
     });
   

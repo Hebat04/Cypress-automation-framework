@@ -43,7 +43,7 @@ module.exports = defineConfig({
     //experimentalModifyObstructiveThirdPartyCode : true
 
     // to resolve blank page after running cypress tests 
-    //testIsolation: false,
+   // testIsolation: false,
 
     defaultCommandTimeout: 10000,
     //pageLoadTimeout: 120000,
