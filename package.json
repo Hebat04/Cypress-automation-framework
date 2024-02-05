@@ -11,7 +11,7 @@
     "triggerAllTests-webdriveruni": "npx cypress run --spec cypress/e2e/1-getting-started/webdriver-uni/*",
     "triggerAllTests-autoTestStore": "npx cypress run --spec cypress/e2e/1-getting-started/automation-test-store/*",
     "triggerAllTests-autoTestStore-dashboard": "npx cypress run --spec cypress/e2e/1-getting-started/automation-test-store/* --record --key (the key of the project on the dashboard)",
-    "checkOneTest": " npx cypress run --spec cypress/e2e/1-getting-started/webdriver-uni/contact-us-with-PO.js",
+    "checkOneTest": " npx cypress run --headed --browser chrome --spec cypress/e2e/1-getting-started/webdriver-uni/contact-us-with-PO.js",
     "junit-merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
     "delete-junit-report": "rm -rf cypress/results/junit/results.xml",
     "delete-results": "rm -rf cypress/results/* || true",
