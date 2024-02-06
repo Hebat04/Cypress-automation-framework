@@ -10,7 +10,7 @@
     "triggerAllTests-dashboard": "npx cypress run --record --key (the key of the project on the dashboard)",
     "triggerAllTests-webdriveruni": "npx cypress run --spec cypress/e2e/1-getting-started/webdriver-uni/*",
     "triggerAllTests-autoTestStore": "npx cypress run --spec cypress/e2e/1-getting-started/automation-test-store/*",
-    "triggerAllTests-autoTestStore-dashboard": "npx cypress run --spec cypress/e2e/1-getting-started/automation-test-store/* --record --key (the key of the project on the dashboard)",
+    "triggerAllTests-autoTestStore-dashboard": "npx cypress run --spec cypress/e2e/1-getting-started/automation-test-store/* --record --key e8fa4526-1fa4-4f22-afd4-21de338d1658",
     "checkOneTest": " npx cypress run --headed --browser chrome --spec cypress/e2e/1-getting-started/webdriver-uni/contact-us-with-PO.js",
     "junit-merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
     "delete-junit-report": "rm -rf cypress/results/junit/results.xml",
