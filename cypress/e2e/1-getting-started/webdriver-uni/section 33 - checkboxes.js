@@ -14,7 +14,7 @@ describe("Verify checkboxes via webdriveruni", () => {
         //cy.get('input[value="option-1"]').check().should('be.checked') 
         // if need to assert that is not checked .should('not.be.checked')
         // tried to use the alias
-        cy.get('input[value="option-1222"]').as('1stInput')
+        cy.get('input[value="option-1"]').as('1stInput')
         cy.get('@1stInput').check().should('be.checked') 
 
 
