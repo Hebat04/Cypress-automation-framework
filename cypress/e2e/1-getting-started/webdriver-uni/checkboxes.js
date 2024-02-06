@@ -4,7 +4,7 @@
 describe("Verify checkboxes via webdriveruni", () => {
 
 
-    it("check and validate checkbox", () => {
+    it.only("check and validate checkbox", () => {
 
         cy.visit("https://www.webdriveruniversity.com/")
         // get the id of the page 
@@ -14,7 +14,7 @@ describe("Verify checkboxes via webdriveruni", () => {
         //cy.get('input[value="option-1"]').check().should('be.checked') 
         // if need to assert that is not checked .should('not.be.checked')
         // tried to use the alias
-        cy.get('input[value="option-1"]').as('1stInput')
+        cy.get('input[value="option-1222"]').as('1stInput')
         cy.get('@1stInput').check().should('be.checked') 
 
 
@@ -55,7 +55,7 @@ describe("Verify checkboxes via webdriveruni", () => {
     })
 
 // Add on Test 
-    it.only("validate checkboxes using iteration by unchecking the checked and checking the unchecked", () => {
+    it("validate checkboxes using iteration by unchecking the checked and checking the unchecked", () => {
         cy.visit("https://www.webdriveruniversity.com/")
         cy.get('#dropdown-checkboxes-radiobuttons').invoke('removeAttr', 'target').click({ force: true })
 
