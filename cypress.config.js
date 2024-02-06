@@ -57,8 +57,9 @@ module.exports = defineConfig({
     // vide 207 - recoding videos - 1 will be jhhigh quality with high resources and 51 vice verse
     videoCompression: 32,
     // if we set video recoding to false it will not take videos
-    video: false,
-
+    video: true,
+    
+    
     // section 47 - Global env variable 
     env: {
       first_name: "Sarah",
