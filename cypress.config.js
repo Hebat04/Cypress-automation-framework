@@ -17,6 +17,7 @@ function getConfigurationByFile(file) {
 }
 
 module.exports = defineConfig({
+  projectId: 'kz32o4',
   video: true,
   e2e: {
     setupNodeEvents(on, config) {
